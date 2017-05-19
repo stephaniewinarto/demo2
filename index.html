@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>feed</title>
+  <link rel="stylesheet" href="assets/demo.css">
+
+  <script src="build/tracking-min.js"></script>
+  <script src="build/data/face-min.js"></script>
+  <script src="../node_modules/dat.gui/build/dat.gui.min.js"></script>
+  <script src="assets/stats.min.js"></script>
+
+  <script src="libraries/p5.js" type="text/javascript"></script>
+  <script src="libraries/p5.dom.js" type="text/javascript"></script>
+  <script src="libraries/p5.sound.js" type="text/javascript"></script>
+  <script src="sketch_copy.js" type="text/javascript"></script>
+
+
+
+  <style>
+  video, canvas {
+    margin-left: 0;
+    margin-top: 0;
+    position: absolute;
+  }
+
+  @font-face {
+    font-family: "gtAmerica-Medium";
+    src:url("GT-America-Medium.otf");
+}
+
+  @font-face {
+    font-family: "gtAmerica-Light";
+    src:url("GT-America-Light.otf");
+  }
+  #time { 
+    left: 1000px;
+    margin-top: 1vh;
+    position: absolute;
+    z-index: 1;
+    color: rgb(255,255,255);
+    font-size: 13pt;
+    font-family: "gtAmerica-Light"; 
+    letter-spacing: 1pt;
+    /*text-shadow: 2px 2px 8px #000000;*/
+   }
+
+   #date { 
+    margin-left: 1vw;
+    margin-top: 1vh;
+    position: absolute;
+    z-index: 1;
+    font-size: 13pt;
+    color: rgb(255,255,255);
+    font-family: "gtAmerica-Light"; 
+    /*text-shadow: 2px 2px 8px #000000;*/
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <h2 id="time"></h2>
+  <h2 id="date"></h2>
+
+  <div class="demo-frame">
+    <div class="demo-container">
+      <video id="video" width="320" height="200" preload autoplay loop muted></video>
+      <canvas id="canvas" width="320" height="240"></canvas>
+    </div>
+
+  <!-- </div> -->
+
+</body>
+</html>
